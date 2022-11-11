@@ -1,0 +1,8 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#shelf-home",
+      "flex-layout.row#shelf-custom"
+    ]
+  }
+}

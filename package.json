@@ -1,0 +1,15 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hiago Lopez",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"sass --watch --no-source-map styles/scss:styles/css --style compressed\" \"vtex link\" \"sass --watch --no-source-map react/scss:react/css --style compressed\"",
+    "precaution": "echo Lembre-se de estar logado na loja utilizando o vtex login"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "sass": "^1.43.4"
+  }
+}

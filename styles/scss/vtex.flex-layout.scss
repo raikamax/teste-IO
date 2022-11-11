@@ -1,0 +1,25 @@
+.flexRow--shelf-home{
+  padding: 0 26px;
+  
+  /* tablet */
+  @media (min-width: 640px) and (max-width: 1199px) {
+    padding: 0 20px;
+  }
+  /* mobile */
+  @media (max-width: 639px) {
+    padding: 0 14px;
+  }
+}
+
+.flexRow--shelf-custom{
+  padding: 0 26px;
+  
+  /* tablet */
+  @media (min-width: 640px) and (max-width: 1199px) {
+    padding: 0 20px;
+  }
+  /* mobile */
+  @media (max-width: 639px) {
+    padding: 0 14px;
+  }
+}

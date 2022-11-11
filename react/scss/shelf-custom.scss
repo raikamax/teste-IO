@@ -1,0 +1,47 @@
+.shelf__item{
+    &-image{
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-name{
+        font-style: normal;
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: #000;
+        text-decoration: none;
+    
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        
+        margin: 5px 0;
+    }
+    &-prices{
+        display: flex;
+        align-items: center;
+        
+        &--listPrice{
+            font-size: 12px;
+            color: rgb(70, 70, 70);
+            font-weight: 500;
+            text-decoration: line-through;
+            
+            margin-right: 5px;
+        }
+        &--bestPrice{
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    &-buyButton{
+        
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#shelf-home": {
+    "children": [
+      "flex-layout.col#shelf-home"
+    ],
+    "props": {
+      "blockClass": "shelf-home"
+    }
+  },
+  "flex-layout.col#shelf-home": {
+    "children": [
+      "rich-text#shelf-home-title",
+      "list-context.product-list#shelf-home"
+    ],
+    "props": {
+      "blockClass": "shelf-home"
+    }
+  },
+
+  "rich-text#shelf-home-title": {
+    "props": {
+      "text": "## Mais Vendidos (VTEX IO NATIVO)",
+      "blockClass": "shelf-home-title"
+    }
+  },
+
+  "list-context.product-list#shelf-home": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home"],
+    "props": {
+      "collection": "139",
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#shelf-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "adaptiveHeight": true,
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf-home",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  }
+}

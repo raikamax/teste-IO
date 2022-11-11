@@ -1,0 +1,12 @@
+{
+    "product-summary.shelf#shelfCustom": {
+        "children": [
+          "shelf-custom"
+        ]
+      },
+    "shelf-custom": {
+        "children": [
+          "add-to-cart-button"
+        ]
+    }
+}

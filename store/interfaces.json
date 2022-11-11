@@ -1,0 +1,11 @@
+{
+  "global-css": {
+    "component": "GlobalCSS"
+  },
+
+  "shelf-custom": {
+    "component": "ShelfCustom",
+    "composition": "children"
+  }
+
+}

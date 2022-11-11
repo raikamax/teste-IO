@@ -1,0 +1,47 @@
+{
+    "flex-layout.row#shelf-custom": {
+        "children": ["flex-layout.col#shelf-custom"],
+        "props": {
+            "blockClass": "shelf-custom"
+        }
+    },
+
+    "flex-layout.col#shelf-custom": {
+        "children": [
+            "rich-text#shelf-custom-title",
+            "list-context.product-list#custom"
+        ],
+        "props": {
+            "blockClass": "shelf-custom"
+        }
+    },
+    "rich-text#shelf-custom-title": {
+        "props": {
+          "text": "## Você pode gostar (REACT CUSTOM)",
+          "blockClass": "shelf-custom-title"
+        }
+    },
+    "list-context.product-list#custom": {
+        "blocks": ["product-summary.shelf#shelfCustom"],
+        "children": ["slider-layout#custom"],
+        "props": {
+            "collection": "139",
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    },
+    "slider-layout#custom": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 2,
+                "phone": 1
+            },
+            "adaptiveHeight": true,
+            "infinite": true,
+            "fullWidth": true,
+            "blockClass": "shelf-custom",
+            "showNavigationArrows": "always",
+            "showPaginationDots": "never"
+        }
+    }
+}
